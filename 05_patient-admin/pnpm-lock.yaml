@@ -20,6 +20,9 @@ importers:
       react-hook-form:
         specifier: ^7.81.0
         version: 7.81.0(react@19.2.7)
+      react-toastify:
+        specifier: ^11.1.0
+        version: 11.1.0(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       tailwindcss:
         specifier: ^4.3.2
         version: 4.3.2
@@ -591,6 +594,10 @@ packages:
   caniuse-lite@1.0.30001803:
     resolution: {integrity: sha512-g/uHREV2ZpK9qMalCsWaxmA6ol+DX8GYhuf3T40RKoP+oL7vhRJh8LNt73PCjpnR6l14FzfPrB5Yux4PKm2meg==}
 
+  clsx@2.1.1:
+    resolution: {integrity: sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA==}
+    engines: {node: '>=6'}
+
   convert-source-map@2.0.0:
     resolution: {integrity: sha512-Kvp459HrV2FEJ1CAsi1Ku+MY3kasH19TFykTz2xWmMeq6bk2NU3XXvfJ+Q61m0xktWwt+1HSYf3JZsTms3aRJg==}
 
@@ -952,6 +959,12 @@ packages:
     engines: {node: '>=18.0.0'}
     peerDependencies:
       react: ^16.8.0 || ^17 || ^18 || ^19
+
+  react-toastify@11.1.0:
+    resolution: {integrity: sha512-e9h23x3phN0wbFeB6yovmWp7lobzV4CaCH0LO8nVP6H7Y+3GbcLpIzMm9dJhcp1RXbpyfvjgpfXqO80QAmn7sg==}
+    peerDependencies:
+      react: ^18 || ^19
+      react-dom: ^18 || ^19
 
   react@19.2.7:
     resolution: {integrity: sha512-HNe9WslTbXmFK8o8cmwgAeJFSBvt1bPdHCVKtaaV+WlAN36mpT4hcRpwbf3fY56ar2oIXzsBpOAiIRHAdY0OlQ==}
@@ -1621,6 +1634,8 @@ snapshots:
 
   caniuse-lite@1.0.30001803: {}
 
+  clsx@2.1.1: {}
+
   convert-source-map@2.0.0: {}
 
   cross-spawn@7.0.6:
@@ -1929,6 +1944,12 @@ snapshots:
   react-hook-form@7.81.0(react@19.2.7):
     dependencies:
       react: 19.2.7
+
+  react-toastify@11.1.0(react-dom@19.2.7(react@19.2.7))(react@19.2.7):
+    dependencies:
+      clsx: 2.1.1
+      react: 19.2.7
+      react-dom: 19.2.7(react@19.2.7)
 
   react@19.2.7: {}
 
